@@ -10,5 +10,7 @@ while (true) {
   search = prompt("Search for a product in our store. Type 'list' to show all of the products and 'quit' to exit");
   if ( search === 'quit') {
     break;
+  } else if ( search === 'list') {
+    print( inStock.join(',') );
   }
 }
