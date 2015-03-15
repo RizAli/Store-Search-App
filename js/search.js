@@ -8,6 +8,7 @@ function print(message) {
 
 while (true) {
   search = prompt("Search for a product in our store. Type 'list' to show all of the products and 'quit' to exit");
+  search = search.toLowerCase();
   if ( search === 'quit') {
     break;
   } else if ( search === 'list') {
