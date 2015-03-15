@@ -12,5 +12,11 @@ while (true) {
     break;
   } else if ( search === 'list') {
     print( inStock.join(',') );
+  } else {
+    if ( inStock.indexOf(search) > -1 ) {
+      print('Yes, we have ' + search  + ' in the Store. ');
+    } else {
+      print (search + ' is not in stock.');
+    }
   }
 }
